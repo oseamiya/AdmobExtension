@@ -1,0 +1,37 @@
+# For a detailed info on this file and supported fields, check out the below link:
+# https://github.com/ShreyashSaitwal/rush-cli/wiki/Metadata-File
+
+---
+name: AdmobSdks
+description: This extension contains all the sdks that are required for admob ads. You can see the source of this extension from <a href="https://github.com/oseamiya/AdmobExtension"> here</a>.
+
+version:
+  number: auto
+  name: '1'
+
+authors:
+  - oseamiya
+
+build:
+  release:
+    # Optimizes the extension on every release build.
+    optimize: true
+
+  # If enabled, you will be able to use Java 8 language features in your extension.
+  desugar:
+    enable: false
+    desugar_deps: false
+
+assets:
+  # Extension icon. This can be a URL or a local image in 'assets' folder.
+  icon: icon.png
+  
+deps:
+  - play-services-ads-base-20.4.0.jar
+  - play-services-ads-identifier-17.1.0.jar
+  - play-services-base-17.6.0.jar
+  - play-services-basement-17.6.0.jar
+  - play-services-measurement-base-20.0.0.jar
+  - play-services-measurement-sdk-api-20.0.0.jar
+  - play-services-tasks-17.2.1.jar
+  - play-services-ads-lite-20.4.0.jar
