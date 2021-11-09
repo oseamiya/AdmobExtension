@@ -2,4 +2,4 @@ These are the extensions required to integrate AdMob ads in your appinventor-2 a
 
 ---
 
-Remember this extension will not work on Kodular, Niotron or any other platform except for AppInventor-2. If you faced any problems in the extension or you wanted to suggest me anything then you can DM me from <a href="https://community.appinventor.mit.edu/u/oseamiya"> here. Your suggestions are always welcomed and it will help me to make these extensions better.
+Remember this extension will not work on Kodular, Niotron or any other platform except for AppInventor-2. If you faced any problems in the extension or you wanted to suggest me anything then you can DM me from <a href="https://community.appinventor.mit.edu/u/oseamiya"> here</a>. Your suggestions are always welcomed and it will help me to make these extensions better.
