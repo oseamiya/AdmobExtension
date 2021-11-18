@@ -38,6 +38,7 @@ public class RewardedInterstitial extends AndroidNonvisibleComponent {
   public boolean TestMode(){
     return testMode;
   }
+  @DesignerProperty()
   @SimpleProperty
   public void AdUnitId(String adUnitId){
     rewardedInterstitialAdUnitId = adUnitId;
