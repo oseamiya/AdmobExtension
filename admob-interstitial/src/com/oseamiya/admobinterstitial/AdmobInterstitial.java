@@ -54,7 +54,7 @@ public class AdmobInterstitial extends AndroidNonvisibleComponent {
   }
   @SimpleEvent
   public void FailedToLoad(String error){
-    EventDispatcher.dispatchEvent(this , "FailedToLoad");
+    EventDispatcher.dispatchEvent(this , "FailedToLoad", error);
   }
   @SimpleEvent
   public void FailedToShowFullScreenContent(String error){
