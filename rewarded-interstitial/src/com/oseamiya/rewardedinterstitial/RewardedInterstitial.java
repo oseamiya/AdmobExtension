@@ -74,7 +74,7 @@ public class RewardedInterstitial extends AndroidNonvisibleComponent {
   @SimpleFunction
   public void LoadAd(){
     String adUnitId = testMode ? TEST_AD_UNIT_ID : rewardedInterstitialAdUnitId;
-    RewardedInterstitialAd.load(context, TEST_AD_UNIT_ID, new AdRequest.Builder().build(), new RewardedInterstitialAdLoadCallback() {
+    RewardedInterstitialAd.load(context, adUnitId, new AdRequest.Builder().build(), new RewardedInterstitialAdLoadCallback() {
       @Override
       public void onAdLoaded(@NonNull @NotNull RewardedInterstitialAd rewardedInterstitialAd) {
         mRewardedInterstitialAd = rewardedInterstitialAd;
