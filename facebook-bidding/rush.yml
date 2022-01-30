@@ -1,0 +1,35 @@
+# For a detailed info on this file and supported fields, check out the below link:
+# https://github.com/ShreyashSaitwal/rush-cli/wiki/Metadata-File
+
+---
+name: FacebookBidding
+description: This extension will help you to add facebook bidding with AdMob in your AI2 extension. <br> <a href="https://github.com/oseamiya/AdmobExtension">Extension Source Code</a> <br> <a href="https://community.appinventor.mit.edu/t/free-admob-extension-add-different-types-of-admob-ads-in-your-application/45216?u=oseamiya">Documentation</a> 
+
+
+version:
+  number: auto
+  name: '1'
+
+authors:
+  - oseamiya
+
+build:
+  release:
+    # Optimizes the extension on every release build.
+    optimize: true
+
+  # If enabled, you will be able to use Java 8 language features in your extension.
+  desugar:
+    enable: false
+    desugar_deps: false
+
+assets:
+  # Extension icon. This can be a URL or a local image in 'assets' folder.
+  icon: icon.png
+  # Extension assets.
+  # other:
+  #   - my_awesome_asset.anything
+
+deps:
+  - audience-network-sdk-6.8.0.jar
+  - facebook-6.8.0.0.jar
