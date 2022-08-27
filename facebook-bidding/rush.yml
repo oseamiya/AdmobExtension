@@ -31,5 +31,5 @@ assets:
   #   - my_awesome_asset.anything
 
 deps:
-  - audience-network-sdk-6.8.0.jar
-  - facebook-6.8.0.0.jar
+  - admob-facebook-6.11.0.1.jar
+  - audience-network-6.11.0.jar
