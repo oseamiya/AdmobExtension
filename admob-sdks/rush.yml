@@ -6,8 +6,11 @@ name: AdmobSdks
 description: This extension contains all the sdks that are required for admob ads. You can see the source of this extension from <a href="https://github.com/oseamiya/AdmobExtension"> here</a>.
 
 version:
-  number: auto
-  name: '1'
+  number: 3
+  name: '22.2.0'
+
+min_sdk: 19
+
 
 authors:
   - oseamiya
@@ -27,11 +30,4 @@ assets:
   icon: icon.png
   
 deps:
-  - play-services-ads-base-20.4.0.jar
-  - play-services-ads-identifier-17.1.0.jar
-  - play-services-base-17.6.0.jar
-  - play-services-basement-17.6.0.jar
-  - play-services-measurement-base-20.0.0.jar
-  - play-services-measurement-sdk-api-20.0.0.jar
-  - play-services-tasks-17.2.1.jar
-  - play-services-ads-lite-20.4.0.jar
+  - play-services-ads-21.2.0.jar
