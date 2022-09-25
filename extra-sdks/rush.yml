@@ -1,0 +1,48 @@
+# For a detailed info on this file and supported fields, check out the below link:
+# https://github.com/ShreyashSaitwal/rush-cli/wiki/Metadata-File
+
+---
+name: ExtraSdks
+description: This extension provides the required libraries (sdks) for ads. You must drag and drop this extension in-order to show the ad. You can see the source of this extension from <a href="https://github.com/oseamiya/AdmobExtension"> here</a>.
+
+version:
+  number: 3
+  name: '22.2.0'
+
+min_sdk: 19
+
+authors:
+  - oseamiya
+
+build:
+  release:
+    # Optimizes the extension on every release build.
+    optimize: true
+
+  # If enabled, you will be able to use Java 8 language features in your extension.
+  desugar:
+    enable: false
+    desugar_deps: false
+
+assets:
+  icon: icon.png
+
+deps:
+  - listenablefuture-1.0.jar
+  - play-services-ads-base-21.2.0.jar
+  - play-services-ads-identifier-17.0.0.jar
+  - play-services-ads-lite-21.2.0.jar
+  - play-services-appset-16.0.1.jar
+  - play-services-base-18.0.0.jar
+  - play-services-basement-17.0.0.jar
+  - play-services-measurement-base-20.1.2.jar
+  - play-services-measurement-sdk-api-20.1.2.jar
+  - play-services-tasks-18.0.0.jar
+  - user-messaging-platform-2.0.0.jar
+  - work-runtime-2.7.0.jar
+  - concurrent-futures-1.0.0.jar
+  - lint.jar
+  - startup-runtime-1.0.0.jar
+  - tracing-1.0.0.jar
+
+
