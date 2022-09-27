@@ -1,6 +1,6 @@
 ## FacebookBidding Extension
 
-This extension will help you to add facebook ads, bidding with AdMob on your MIT AI2 application. 
+This extension will help you to add facebook ads, bidding with AdMob on your MIT AI2 application.
 
 [Download Latest Version Of FacebookBidding Extension](https://github.com/oseamiya/AdmobExtension/raw/main/facebook-bidding/out/com.oseamiya.facebookbidding.aix)
 

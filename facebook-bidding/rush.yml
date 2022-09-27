@@ -3,15 +3,16 @@
 
 ---
 name: FacebookBidding
-description: This extension will help you to add facebook bidding with AdMob in your AI2 extension. <br> <a href="https://github.com/oseamiya/AdmobExtension">Extension Source Code</a> <br> <a href="https://community.appinventor.mit.edu/t/free-admob-extension-add-different-types-of-admob-ads-in-your-application/45216?u=oseamiya">Documentation</a> 
-
+description: This extension will help you to add facebook bidding with AdMob in your AI2 extension. <br> <a href="https://github.com/oseamiya/AdmobExtension">Extension Source Code</a> <br> <a href="https://community.appinventor.mit.edu/t/free-admob-extension-add-different-types-of-admob-ads-in-your-application/45216?u=oseamiya">Documentation</a>
 
 version:
   number: auto
-  name: '1'
+  name: '6.11.0.1'
 
 authors:
   - oseamiya
+
+min_sdk: 19
 
 build:
   release:
@@ -26,10 +27,8 @@ build:
 assets:
   # Extension icon. This can be a URL or a local image in 'assets' folder.
   icon: icon.png
-  # Extension assets.
-  # other:
-  #   - my_awesome_asset.anything
 
 deps:
-  - admob-facebook-6.11.0.1.jar
-  - audience-network-6.11.0.jar
+  - audience-network-sdk-6.11.0.jar
+  - facebook-6.11.0.1.jar
+  - R.jar
