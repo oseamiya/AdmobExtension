@@ -1,0 +1,32 @@
+# For a detailed info on this file and supported fields, check out the below link:
+# https://github.com/ShreyashSaitwal/rush-cli/wiki/Metadata-File
+
+---
+name: AdmobSdkLite
+description: Alternative extension for admob sdk extension. <br><a href="https://github.com/oseamiya">Programmed by Oseamiya</a></br>You can see the source of this extension from <a href="https://github.com/oseamiya/AdmobExtension"> here</a>.
+
+version:
+  number: 1
+  name: '21.2.0'
+
+authors:
+  - oseamiya
+
+min_sdk: 21
+
+build:
+  release:
+    # Optimizes the extension on every release build.
+    optimize: true
+
+  # If enabled, you will be able to use Java 8 language features in your extension.
+  desugar:
+    enable: false
+    desugar_deps: false
+
+assets:
+  # Extension icon. This can be a URL or a local image in 'assets' folder.
+  icon: icon.png
+
+deps:
+  - AdmobLite-21.2.0.jar
