@@ -6,11 +6,13 @@ name: AdcolonyMediation
 description: This extension will help you to add adcolony ads with mediation in you AI2 apps. <br> Developed by oseamiya <br><a href="https://github.com/oseamiya/AdmobExtension">Extension Source Code</a> <br> <a href="https://community.appinventor.mit.edu/t/free-admob-extension-add-different-types-of-admob-ads-in-your-application/45216?u=oseamiya">Documentation</a>
 
 version:
-  number: auto
-  name: '1'
+  number: 2
+  name: '4.8.0.0'
 
 authors:
   - oseamiya
+
+min_sdk: 19
 
 build:
   release:
@@ -25,10 +27,9 @@ build:
 assets:
   # Extension icon. This can be a URL or a local image in 'assets' folder.
   icon: icon.png
-  # Extension assets.
-  # other:
-  #   - my_awesome_asset.anything
+
 
 deps:
-  - adcolony-4.6.5.0.jar
-  - sdk-4.6.5.jar
+  - adcolony-4.8.0.0.jar
+  - R.jar
+  - sdk-4.8.0.jar

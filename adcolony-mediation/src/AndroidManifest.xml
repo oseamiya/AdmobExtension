@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.oseamiya.adcolonymediation">
-<uses-sdk android:minSdkVersion="16" android:targetSdkVersion="30"/>
-<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-<uses-permission android:name="android.permission.VIBRATE" />
-  <application>
-    <activity android:name="com.adcolony.sdk.AdColonyInterstitialActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:hardwareAccelerated="true"/>
-  </application>
+    <uses-sdk android:targetSdkVersion="31"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <queries>
+        <package android:name="com.android.vending"/>
+        <package android:name="com.amazon.venezia"/>
+        <package android:name="com.sec.android.app.samsungapps"/>
+        <package android:name="com.huawei.appmarket"/>
+    </queries>
+    <application>
+        <activity
+                android:name="com.adcolony.sdk.AdColonyInterstitialActivity"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+                android:exported="false"
+                android:hardwareAccelerated="true"/>
+        <activity
+                android:name="com.adcolony.sdk.AdColonyAdViewActivity"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+                android:hardwareAccelerated="true"/>
+    </application>
 </manifest>

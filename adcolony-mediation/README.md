@@ -1,3 +1,3 @@
 ## AdcolonyMediation
 
-An App Inventor 2 extension created using Rush.
+Extension to integrate adcolony ads inside your AppInventor application.
