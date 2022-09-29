@@ -3,11 +3,11 @@
 
 ---
 name: AdmobBanner
-description: This extension helps you to add admob banner ads in your appinventor 2 application. See the extension source from <a href="https://github.com/oseamiya/AdmobExtension"> here</a> 
+description: This extension helps you to add admob banner ads in your appinventor 2 application. See the extension source from <a href="https://github.com/oseamiya/AdmobExtension"> here</a>. <br><a href="https://youtu.be/BE2K1IpXaSI">Banner Ad Best Practices</a><br><a href="https://www.patreon.com/oseamiya">Buy Dev A Cup Of Coffee</a></br>
 
 version:
-  number: auto
-  name: '1'
+  number: 2
+  name: '2'
 
 authors:
   - oseamiya
