@@ -3,7 +3,10 @@ package com.oseamiya.admobsdklite;
 import android.app.Activity;
 import android.content.Context;
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import com.google.android.gms.ads.AdInspectorError;
 import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.OnAdInspectorClosedListener;
 import com.google.android.gms.ads.RequestConfiguration;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
@@ -167,6 +170,14 @@ public class AdmobSdkLite extends AndroidNonvisibleComponent {
             });
   }
 
+  /**
+   * Consent status can be
+   * NOT_REQUIRED = 1
+   * OBTAINED = 3
+   * REQUIRED = 2
+   * UNKNOWN = 0
+   * You may show the form when consent status is REQUIRED or UNKNOWN ie, 2 and 0
+   */
   @SimpleEvent
   public void ConsentFormLoadSuccess(int status) {
     EventDispatcher.dispatchEvent(this, "ConsentFormLoadSuccess", status);
@@ -204,6 +215,7 @@ public class AdmobSdkLite extends AndroidNonvisibleComponent {
       @Override
       public void onConsentFormDismissed(FormError formError) {
         ConsentFormDismissed(formError.getMessage());
+        // if user dismissed the consent form then you might call the loadForm again.
       }
     });
   }
@@ -214,6 +226,18 @@ public class AdmobSdkLite extends AndroidNonvisibleComponent {
       consentInformation.reset();
     }
   }
+
+  @SimpleEvent
+  public void AdInspectorClosed(String error) {
+    EventDispatcher.dispatchEvent(this, "AdInspectorClosed", error);
+  }
+
+  @SimpleFunction
+  public void OpenAdInspector() {
+    MobileAds.openAdInspector(context, new OnAdInspectorClosedListener() {
+      public void onAdInspectorClosed(@Nullable AdInspectorError error) {
+        AdInspectorClosed(error == null ? "" : error.getMessage());
+      }
+    });
+  }
 }
-
-
